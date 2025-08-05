@@ -1,6 +1,6 @@
 "use client";
 import { motion, useMotionTemplate, useMotionValue, animate } from "framer-motion";
-import { ArrowRight, Sparkles, Zap, Code, Crop, Cpu } from "lucide-react";
+import { Zap, Code, Crop, Cpu } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState, useMemo } from "react";
 
