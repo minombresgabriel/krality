@@ -3,9 +3,19 @@ import { motion, useMotionTemplate, useMotionValue, animate } from "framer-motio
 import { Zap, Code, Crop, Cpu } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState, useMemo } from "react";
-
+interface ParticleType {
+  id: number;
+  type: number;
+  left: number;
+  top: number;
+  size: number;
+  delay: number;
+  duration: number;
+  opacity: number;
+  rotate: number;
+} 
 // Componente optimizado para partículas
-const Particle = ({ particle, windowHeight }: { particle: any, windowHeight: number }) => {
+const Particle = ({ particle, windowHeight }: { particle: ParticleType, windowHeight: number }) => {
   return (
     <motion.div
       key={`particle-${particle.id}`}
