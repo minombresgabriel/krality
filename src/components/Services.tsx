@@ -3,18 +3,6 @@ import { Code, Palette, Zap, ArrowRight, Leaf, Cpu, Cloud, Sparkles } from "luci
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const serviceVariants = {
-  hidden: { opacity: 0, y: 80, rotateX: 15 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    rotateX: 0,
-    transition: {
-      duration: 0.8,
-      ease: [0.16, 1, 0.3, 1]
-    }
-  }
-};
 
 export default function Services() {
   const [ref, inView] = useInView({

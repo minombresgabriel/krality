@@ -169,7 +169,7 @@ export default function Testimonials() {
                     animate={inView ? { opacity: 1 } : {}}
                     transition={{ delay: index * 0.15 + 0.3 }}
                   >
-                    "{testimonial.quote}"
+  &ldquo;{testimonial.quote}&rdquo;
                   </motion.p>
                 </motion.div>
                 

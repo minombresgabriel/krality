@@ -4,18 +4,6 @@ import { ArrowUpRight, Eye, Github, Star, Zap, Leaf, Crop } from "lucide-react";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
-const projectVariants = {
-  hidden: { opacity: 0, y: 80, rotateX: 10 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    rotateX: 0,
-    transition: {
-      duration: 0.8,
-      ease: [0.16, 1, 0.3, 1]
-    }
-  }
-};
 
 export default function Portfolio() {
   const [ref, inView] = useInView({

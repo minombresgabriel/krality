@@ -80,30 +80,6 @@ export default function Navbar() {
     { name: "Contacto", href: "#contact" },
   ];
 
-  const menuVariants = {
-    open: {
-      opacity: 1,
-      y: 0,
-      transition: { 
-        staggerChildren: 0.07, 
-        delayChildren: 0.2,
-        type: "spring",
-        stiffness: 500,
-        damping: 30
-      }
-    },
-    closed: {
-      opacity: 0,
-      y: -20,
-      transition: { 
-        staggerChildren: 0.05, 
-        staggerDirection: -1,
-        type: "spring",
-        stiffness: 500,
-        damping: 30
-      }
-    }
-  };
 
   const itemVariants = {
     open: {
