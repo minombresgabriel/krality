@@ -3,20 +3,6 @@ import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 import { useInView } from "react-intersection-observer";
 
-// Configuración de animaciones avanzadas
-const testimonialVariants = {
-  hidden: { opacity: 0, y: 50, scale: 0.98 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.8,
-      ease: [0.16, 1, 0.3, 1],
-      staggerChildren: 0.1
-    }
-  }
-};
 
 
 

@@ -68,7 +68,7 @@ export default function Hero() {
       window.addEventListener("mousemove", handleMouseMove);
       return () => window.removeEventListener("mousemove", handleMouseMove);
     }
-  }, []);
+  }, [mouseX, mouseY]);
 
   const background = useMotionTemplate`radial-gradient(600px at ${mouseX}px ${mouseY}px, rgba(58, 125, 68, 0.15), transparent 80%)`;
 
