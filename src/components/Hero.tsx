@@ -74,7 +74,7 @@ export default function Hero() {
       {/* Contenido principal */}
       <div className="relative z-10 max-w-6xl text-center px-6 py-20">
         {/* Logo */}
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-8 mt-20">
           <div className="p-3 rounded-2xl bg-white/5 backdrop-blur-lg border border-[#E9C46A]/30 shadow-lg shadow-[#3A7D44]/20">
             <Image
               src="/images/logo-krality.png"
